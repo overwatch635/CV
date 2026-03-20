@@ -1,0 +1,113 @@
+   /* STYLE.CSS - CV tech adouci (moins sombre) */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e8f1f9;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),
+    url("data:image/svg+xml;utf8,<svg width='60' height='60' xmlns='http://www.w3.org/2000/svg'><rect width='60' height='60' fill='none'/><path d='M0 30 H60 M30 0 V60' stroke='%230099cc' stroke-width='0.5' opacity='0.1'/></svg>");
+  background-size: 60px 60px;
+  background-repeat: repeat;
+  color: #2b2b2b;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 900px;
+  background-color: #ffffff;
+  margin: 40px auto;
+  padding: 40px;
+  box-shadow: 0 0 20px rgba(0, 136, 204, 0.1);
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.profile-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #0099cc;
+  box-shadow: 0 0 10px #0099cc33;
+  margin-bottom: 15px;
+}
+
+/* Nom avec curseur clignotant comme dans un terminal */
+h1 {
+  font-size: 2.5em;
+  color: #0099cc;
+  font-family: 'Courier New', monospace;
+  margin: 10px 0 5px;
+  position: relative;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+.contact {
+  font-size: 0.95em;
+  color: #444;
+  font-family: monospace;
+}
+
+h2 {
+  color: #0099cc;
+  border-bottom: 2px solid #d0e4ef;
+  padding-bottom: 5px;
+  margin-top: 30px;
+  font-size: 1.6em;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+p {
+  line-height: 1.6;
+  font-size: 1em;
+  color: #333;
+}
+
+/* Effet terminal adouci */
+section:first-of-type p {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #f3f9fb;
+  padding: 15px;
+  border-left: 4px solid #00aacc;
+  color: #1a2a2a;
+  box-shadow: inset 0 0 5px #0099cc22;
+  border-radius: 5px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .profile-photo {
+    width: 90px;
+    height: 90px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+}
